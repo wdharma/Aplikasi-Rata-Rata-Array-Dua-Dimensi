@@ -12,17 +12,14 @@ int main() {
     cout << "Kelas  : BB153"  << endl;
     cout << "=========================" << endl;
     do{
-        // System meminta user untuk memasukan nilai p (panjang)
         cout<<"Masukkan panjang: ";
         cin>>p;
-        // System meminta user untuk memasukan nilai l (lebar)
         cout<<"Masukkan lebar: ";
         cin>>l;
-        // Mendefinisikan panjang dan lebar array berdasarkan input user
-        int angka[p][l];
-        for(i=0; i<p; i++) {
+        int angka[l][p];
+        for(i=0; i<l; i++) {
             total = 0;
-            for(j=0; j<l; j++) {
+            for(j=0; j<p; j++) {
                 angka[i][j] = 0;
             }
         }
@@ -40,9 +37,9 @@ int main() {
             cout<<"Anda ingin mengisi nilai array? (Y/N)"  << endl;
             cin>>isinilai;
         }
-        for(i=0; i<p; i++) {
+        for(i=0; i<l; i++) {
             total = 0;
-            for(j=0; j<l; j++) {
+            for(j=0; j<p; j++) {
                 total = total+angka[i][j];
             }
             cout << "----------------------------------" << endl;
