@@ -1,8 +1,15 @@
 #include<iostream>
 using namespace std;
 int main() {
+    // Mendefinisikan variabel yang digunakan
     char isinilai,pil;
     int total=0;
+    // i dan j adalah index yang digunakan dalam for
+    // p       adalah panjang array
+    // l       adalah lebar array
+    // x       adalah posisi array menurut lebar
+    // y       adalah posisi array menurut panjang
+    // z       adalah nilai yang disimpan sesuai posisi x dan y
     int i,j,p,l,x,y,z;
     cout << "=========================" << endl;
     cout << "APLIKASI RATA-RATA DGN ARRAY " << endl;
@@ -11,6 +18,7 @@ int main() {
     cout << "NIM    : 150030432"  << endl;
     cout << "Kelas  : BB153"  << endl;
     cout << "=========================" << endl;
+    // Ulangi selama pil adalah y
     do{
         // System meminta user utk memasukan panjang dan lebar dari array
         // Panjang (p) adalah bagian yang kesamping
@@ -58,9 +66,13 @@ int main() {
                 total = total+angka[i][j];
             }
             cout << "----------------------------------" << endl;
-            //  System meminta user utk memasukan posisi x (lebar)
+            //  System menampilkan nilai rata-rata per baris sesuai nilai i
+            // (double) total / p merupakan cara mendapatkan nilai rata-rata per baris
+            // total dibagi dengan panjang (p) data per baris
+            // Digunakan double agar dapat menghasilkan angka desimal
             cout << "|| Rata-rata baris ke-" << i << ": " << (double) total / p  << endl;
         }
+        // Konfirmasi mengulang
         cout << "----------------------------------" << endl;
         cout<<"Anda ingin melanjutkan? (Y/N)"  << endl;
         cin>>pil;
