@@ -43,10 +43,10 @@ int main() {
         // Lakukan ini selama variabel isinilai adalah y
         while(isinilai=='y'){
             //  System meminta user utk memasukan posisi x (lebar)
-            cout<<"Masukkan posisi x (0-" << p-1 << ") : ";
+            cout<<"Masukkan posisi x (0-" << l-1 << ") : ";
             cin>>x;
             //  System meminta user utk memasukan posisi y (panjang)
-            cout<<"Masukkan posisi y (0-" << l-1 << ") : ";
+            cout<<"Masukkan posisi y (0-" << p-1 << ") : ";
             cin>>y;
             //  User memasukan nilai sesuai posisi yang diminta
             cout<<"Masukkan nilai di posisi " << x << "," << y << " : ";
