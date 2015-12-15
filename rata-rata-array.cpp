@@ -12,10 +12,13 @@ int main() {
     cout << "Kelas  : BB153"  << endl;
     cout << "=========================" << endl;
     do{
+        // System meminta user untuk memasukan nilai p (panjang)
         cout<<"Masukkan panjang: ";
         cin>>p;
+        // System meminta user untuk memasukan nilai l (lebar)
         cout<<"Masukkan lebar: ";
         cin>>l;
+        // Mendefinisikan panjang dan lebar array berdasarkan input user
         int angka[p][l];
         for(i=0; i<p; i++) {
             total = 0;
